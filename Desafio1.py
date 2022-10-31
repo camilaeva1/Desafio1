@@ -8,12 +8,11 @@ helio = list(range(1, n + 1))
 q = (len(helio) + 1)//2
 
 while len(helio) > 1 and k > 0:
-  if len(helio[:q]) > len(helio[q:]) or len(helio[:q]) < len(helio[q:]) or len(helio[:q]) == len(helio[q:]): #Se a primeira parte for maior
-    helio = helio[:q] #O Vetor recebe o novo vetor dividido
-    q = (len(helio) + 1)//2 #Calcula exatamente o meio, arredondando se o tamanho do vetor for ímpar
-    print(helio)
-    count += 1 #Sempre que executar vai adicionar ao contador
-  ntent += 1  
+  helio = helio[:q] #O Vetor recebe o novo vetor dividido
+  q = (len(helio) + 1)//2 #Calcula exatamente o meio, arredondando se o tamanho do vetor for ímpar
+  print(helio)
+  count += 1 #Sempre que executar vai adicionar ao contador
+ntent += 1  
 print(" ")
 print("Entrada\n", n, k, sep = " ")
 
