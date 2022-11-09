@@ -19,7 +19,7 @@ while len(lista) > 1:  # LEN(LISTA) = NÚMERO DE POSSIBILIDADES RESTANTES
         # SEM POSSIBILIDADE DE ESTOURAR, O PIOR CENÁRIO SERIA SE CONSEGUISSIMOS SOMENTE NO ULITMO NÚMERO DA LISTA, PORTANTO, SOMAMOS A QUANTIDADE DE POSSIBILIDADES AO COUNT ATUAL
         count += len(lista)
         break  # PODEMOS QUEBRAR O LAÇO
-    count += 1  # AO FINAL DO LAÇO ADICIONAR UM AO TESTE (contabilizando quantas divisões na lista foram feitas)
+    count += 1  # AO FINAL DO LAÇO ADICIONAR UM AO TESTE (contabilizando quantas divisões foram feitas na lista)
     if lista == pm:
         k -= 1  # SE A ESCOLHA FOR A PRIMEIRA LISTA, TEMOS QUE CONSIDERAR QUE O BALAO ESTOROU
 print(count)
